@@ -81,7 +81,7 @@ function mods_basic_image_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Origin Information',
-    'weight' => '7',
+    'weight' => '5',
     'children' => array(
       0 => 'field_date_issued',
       1 => 'field_publisher',
@@ -111,7 +111,7 @@ function mods_basic_image_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Physical Description',
-    'weight' => '14',
+    'weight' => '9',
     'children' => array(
       0 => 'field_form',
       1 => 'field_extent',
@@ -139,7 +139,7 @@ function mods_basic_image_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Subject',
-    'weight' => '17',
+    'weight' => '11',
     'children' => array(
       0 => 'field_topic',
       1 => 'field_geographic',
@@ -158,6 +158,34 @@ function mods_basic_image_field_group_info() {
     ),
   );
   $export['group_subject|node|mods_image|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_title_info|node|mods_image|form';
+  $field_group->group_name = 'group_title_info';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'mods_image';
+  $field_group->mode = 'form';
+  $field_group->parent_name = '';
+  $field_group->data = array(
+    'label' => 'Title Info',
+    'weight' => '1',
+    'children' => array(
+      0 => 'field_sub_title',
+      1 => 'title',
+    ),
+    'format_type' => 'fieldset',
+    'format_settings' => array(
+      'formatter' => 'collapsible',
+      'instance_settings' => array(
+        'description' => '',
+        'classes' => '',
+        'required_fields' => 1,
+      ),
+    ),
+  );
+  $export['group_title_info|node|mods_image|form'] = $field_group;
 
   return $export;
 }

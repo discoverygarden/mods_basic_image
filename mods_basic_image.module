@@ -5,3 +5,4 @@
  */
 
 include_once 'mods_basic_image.features.inc';
+include_once 'mods_basic_image.features.field_datastreams.inc';
