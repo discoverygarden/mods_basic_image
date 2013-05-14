@@ -55,6 +55,7 @@ features[field_datastreams][] = mods_image:field_genre
 features[field_datastreams][] = mods_image:field_geo_country
 features[field_datastreams][] = mods_image:field_geographic
 features[field_datastreams][] = mods_image:field_identifier
+features[field_datastreams][] = mods_image:field_image
 features[field_datastreams][] = mods_image:field_language
 features[field_datastreams][] = mods_image:field_names
 features[field_datastreams][] = mods_image:field_note

@@ -230,6 +230,19 @@ $field_datastreams = array();
   'read_context' => 'parent',
   'read_path' => 'mods:identifier[@type=\'local\']',
 );
+  $field_datastreams['mods_image:field_image'] = array(
+    'bundle' => 'mods_image',
+    'field' => 'field_image',
+    'export' => '1',
+    'export_type' => 'managed_datastream',
+    'dsid' => 'OBJ',
+    'create_context' => '',
+    'create_path' => '',
+    'create_type' => '',
+    'create_value' => '',
+    'read_context' => '',
+    'read_path' => '',
+  );
   $field_datastreams['mods_image:field_language'] = array(
   'bundle' => 'mods_image',
   'field' => 'field_language',
