@@ -73,6 +73,7 @@ features[field_datastreams][] = mods_image:group_physical_description
 features[field_datastreams][] = mods_image:group_subject
 features[field_datastreams][] = mods_image:group_title_info
 features[field_datastreams][] = mods_image:title
+features[islandora_sync_bundle_settings][] = mods_image
 features[field_group][] = group_cartographics|node|mods_image|form
 features[field_group][] = group_geographic_information|node|mods_image|form
 features[field_group][] = group_origin_information|node|mods_image|form

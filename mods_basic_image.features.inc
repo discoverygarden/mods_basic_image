@@ -483,3 +483,32 @@ function mods_basic_image_node_info() {
   );
   return $items;
 }
+
+/**
+ * Implements hook_islandora_sync_bundle_settings_defaults().
+ */
+function test_feature_islandora_sync_bundle_settings_defaults() {
+  $islandora_sync_bundle_settings = array();
+  $islandora_sync_bundle_settings['mods_image'] = array(
+    'bundle' => 'mods_image',
+    'entity_type' => 'node',
+    'sync_fedora' => '0',
+    'sync_fedora_timing' => '',
+    'sync_fedora_create' => '1',
+    'sync_fedora_update' => '1',
+    'sync_fedora_delete' => '1',
+    'namespace' => '',
+    'sync_drupal' => '1',
+    'sync_drupal_timing' => 'real_time',
+    'sync_drupal_create' => '1',
+    'sync_drupal_update' => '1',
+    'sync_drupal_delete' => '1',
+  );
+  $islandora_sync_bundle_settings['mods_image']['cmodels'] = array(
+    0 => array(
+      'bundle' => 'mods_image',
+      'cmodel' => 'islandora:sp_basic_image',
+    ),
+  );
+  return $islandora_sync_bundle_settings;
+}
