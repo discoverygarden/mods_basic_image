@@ -89,5 +89,6 @@ features[field_group][] = group_physical_description|node|mods_image|form
 features[field_group][] = group_subject|node|mods_image|form
 features[field_group][] = group_title_info|node|mods_image|form
 features[islandora_sync_bundle_settings][] = mods_image
+features[islandora_sync_xml_ds_settings][] = MODS
 features[node][] = mods_image
 features[relation_type][] = part_of

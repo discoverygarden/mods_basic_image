@@ -596,6 +596,36 @@ return $islandora_sync_bundle_settings;
 }
 
 /**
+ * Implements hook_islandora_sync_xml_ds_settings_defaults().
+ */
+function mods_basic_image_islandora_sync_xml_ds_settings_defaults() {
+$islandora_sync_xml_ds_settings = array();
+  $islandora_sync_xml_ds_settings['MODS'] = array(
+  'ds_id' => 'MODS',
+  'root' => 'mods',
+  'namespace_uri' => 'http://www.loc.gov/mods/v3',
+);
+  $islandora_sync_xml_ds_settings['MODS']['namespaces'] = array(
+  0 => array(
+    'ds_id' => 'MODS',
+    'prefix' => 'mods',
+    'uri' => 'http://www.loc.gov/mods/v3',
+  ),
+  1 => array(
+    'ds_id' => 'MODS',
+    'prefix' => 'xsi',
+    'uri' => 'http://www.w3.org/2001/XMLSchema-instance',
+  ),
+  2 => array(
+    'ds_id' => 'MODS',
+    'prefix' => 'xlink',
+    'uri' => 'http://www.w3.org/1999/xlink',
+  ),
+);
+return $islandora_sync_xml_ds_settings;
+}
+
+/**
  * Implements hook_node_info().
  */
 function mods_basic_image_node_info() {
