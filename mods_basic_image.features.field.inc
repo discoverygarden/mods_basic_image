@@ -235,7 +235,7 @@ function mods_basic_image_field_default_fields() {
           'module' => 'text',
           'settings' => array(),
           'type' => 'text_default',
-          'weight' => '9',
+          'weight' => '10',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -304,7 +304,7 @@ function mods_basic_image_field_default_fields() {
           'module' => 'text',
           'settings' => array(),
           'type' => 'text_default',
-          'weight' => '22',
+          'weight' => '23',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -373,7 +373,7 @@ function mods_basic_image_field_default_fields() {
           'module' => 'text',
           'settings' => array(),
           'type' => 'text_default',
-          'weight' => '23',
+          'weight' => '24',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -442,7 +442,7 @@ function mods_basic_image_field_default_fields() {
           'module' => 'list',
           'settings' => array(),
           'type' => 'list_default',
-          'weight' => '17',
+          'weight' => '18',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -508,7 +508,7 @@ function mods_basic_image_field_default_fields() {
           'module' => 'text',
           'settings' => array(),
           'type' => 'text_default',
-          'weight' => '24',
+          'weight' => '25',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -532,7 +532,7 @@ function mods_basic_image_field_default_fields() {
           'size' => '60',
         ),
         'type' => 'text_textfield',
-        'weight' => '25',
+        'weight' => '29',
       ),
     ),
   );
@@ -577,7 +577,7 @@ function mods_basic_image_field_default_fields() {
           'module' => 'text',
           'settings' => array(),
           'type' => 'text_default',
-          'weight' => '6',
+          'weight' => '7',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -646,7 +646,7 @@ function mods_basic_image_field_default_fields() {
           'module' => 'text',
           'settings' => array(),
           'type' => 'text_default',
-          'weight' => '21',
+          'weight' => '22',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -715,7 +715,7 @@ function mods_basic_image_field_default_fields() {
           'module' => 'text',
           'settings' => array(),
           'type' => 'text_default',
-          'weight' => '4',
+          'weight' => '5',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -784,7 +784,7 @@ function mods_basic_image_field_default_fields() {
           'module' => 'text',
           'settings' => array(),
           'type' => 'text_default',
-          'weight' => '12',
+          'weight' => '13',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -859,7 +859,7 @@ function mods_basic_image_field_default_fields() {
           'module' => 'list',
           'settings' => array(),
           'type' => 'list_default',
-          'weight' => '11',
+          'weight' => '12',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -925,7 +925,7 @@ function mods_basic_image_field_default_fields() {
           'module' => 'text',
           'settings' => array(),
           'type' => 'text_default',
-          'weight' => '3',
+          'weight' => '4',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -994,7 +994,7 @@ function mods_basic_image_field_default_fields() {
           'module' => 'text',
           'settings' => array(),
           'type' => 'text_default',
-          'weight' => '18',
+          'weight' => '19',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -1063,7 +1063,7 @@ function mods_basic_image_field_default_fields() {
           'module' => 'text',
           'settings' => array(),
           'type' => 'text_default',
-          'weight' => '15',
+          'weight' => '16',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -1132,7 +1132,7 @@ function mods_basic_image_field_default_fields() {
           'module' => 'text',
           'settings' => array(),
           'type' => 'text_default',
-          'weight' => '10',
+          'weight' => '11',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -1157,6 +1157,86 @@ function mods_basic_image_field_default_fields() {
         ),
         'type' => 'text_textfield',
         'weight' => '8',
+      ),
+    ),
+  );
+
+  // Exported field: 'node-mods_image-field_image'.
+  $fields['node-mods_image-field_image'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_image',
+      'foreign keys' => array(
+        'fid' => array(
+          'columns' => array(
+            'fid' => 'fid',
+          ),
+          'table' => 'file_managed',
+        ),
+      ),
+      'indexes' => array(
+        'fid' => array(
+          0 => 'fid',
+        ),
+      ),
+      'locked' => '0',
+      'module' => 'image',
+      'settings' => array(
+        'default_image' => 0,
+        'uri_scheme' => 'public',
+      ),
+      'translatable' => '0',
+      'type' => 'image',
+    ),
+    'field_instance' => array(
+      'bundle' => 'mods_image',
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'image',
+          'settings' => array(
+            'image_link' => '',
+            'image_style' => 'basic_image_resize',
+          ),
+          'type' => 'image',
+          'weight' => '0',
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_image',
+      'label' => 'Image',
+      'required' => 0,
+      'settings' => array(
+        'alt_field' => 0,
+        'default_image' => 0,
+        'file_directory' => '',
+        'file_extensions' => 'png gif jpg jpeg',
+        'max_filesize' => '',
+        'max_resolution' => '',
+        'min_resolution' => '',
+        'title_field' => 0,
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'image',
+        'settings' => array(
+          'preview_image_style' => 'thumbnail',
+          'progress_indicator' => 'throbber',
+        ),
+        'type' => 'image_image',
+        'weight' => '31',
       ),
     ),
   );
@@ -1201,7 +1281,7 @@ function mods_basic_image_field_default_fields() {
           'module' => 'text',
           'settings' => array(),
           'type' => 'text_default',
-          'weight' => '8',
+          'weight' => '9',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -1266,7 +1346,7 @@ function mods_basic_image_field_default_fields() {
             'view_mode' => 'full',
           ),
           'type' => 'field_collection_view',
-          'weight' => '1',
+          'weight' => '2',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -1330,7 +1410,7 @@ function mods_basic_image_field_default_fields() {
           'module' => 'text',
           'settings' => array(),
           'type' => 'text_default',
-          'weight' => '13',
+          'weight' => '14',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -1355,6 +1435,74 @@ function mods_basic_image_field_default_fields() {
         ),
         'type' => 'text_textarea',
         'weight' => '10',
+      ),
+    ),
+  );
+
+  // Exported field: 'node-mods_image-field_part_of'.
+  $fields['node-mods_image-field_part_of'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '-1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_part_of',
+      'foreign keys' => array(),
+      'indexes' => array(),
+      'locked' => '0',
+      'module' => 'relation_select',
+      'settings' => array(),
+      'translatable' => '0',
+      'type' => 'relation_select',
+    ),
+    'field_instance' => array(
+      'bundle' => 'mods_image',
+      'default_value' => array(
+        0 => array(
+          'exposed_filters' => array(
+            'element_id' => 'edit-field-part-of-und-0',
+            'form_build_id' => 'form-cHo8oa_VN4HOMzXlCWsIAoMl0l_VtQicNXdttZ6cwKs',
+            'form_id' => 'relation_select_views_exposed_form',
+            'form_token' => 'SfCF3MLdCnv2aHYu5UI96LpbNW374HsMdV0HBabUhog',
+            'term' => '',
+            'view_display_id' => 'default',
+            'view_name' => 'relation_select_term',
+            'vocab' => 'All',
+          ),
+        ),
+      ),
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'relation_select',
+          'settings' => array(),
+          'type' => 'relation_select',
+          'weight' => '26',
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_part_of',
+      'label' => 'Part Of',
+      'required' => 0,
+      'settings' => array(
+        'relation_type' => 'part_of',
+        'relation_view' => 'relation_select_node:default',
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 0,
+        'module' => 'relation_select',
+        'settings' => array(),
+        'type' => 'relation_select',
+        'weight' => '32',
       ),
     ),
   );
@@ -1399,7 +1547,7 @@ function mods_basic_image_field_default_fields() {
           'module' => 'text',
           'settings' => array(),
           'type' => 'text_default',
-          'weight' => '7',
+          'weight' => '8',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -1468,7 +1616,7 @@ function mods_basic_image_field_default_fields() {
           'module' => 'text',
           'settings' => array(),
           'type' => 'text_default',
-          'weight' => '19',
+          'weight' => '20',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -1537,7 +1685,7 @@ function mods_basic_image_field_default_fields() {
           'module' => 'text',
           'settings' => array(),
           'type' => 'text_default',
-          'weight' => '5',
+          'weight' => '6',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -1606,7 +1754,7 @@ function mods_basic_image_field_default_fields() {
           'module' => 'text',
           'settings' => array(),
           'type' => 'text_default',
-          'weight' => '20',
+          'weight' => '21',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -1675,7 +1823,7 @@ function mods_basic_image_field_default_fields() {
           'module' => 'text',
           'settings' => array(),
           'type' => 'text_default',
-          'weight' => '0',
+          'weight' => '1',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -1744,7 +1892,7 @@ function mods_basic_image_field_default_fields() {
           'module' => 'text',
           'settings' => array(),
           'type' => 'text_default',
-          'weight' => '16',
+          'weight' => '17',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -1813,7 +1961,7 @@ function mods_basic_image_field_default_fields() {
           'module' => 'text',
           'settings' => array(),
           'type' => 'text_default',
-          'weight' => '14',
+          'weight' => '15',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -1889,7 +2037,7 @@ function mods_basic_image_field_default_fields() {
           'module' => 'list',
           'settings' => array(),
           'type' => 'list_default',
-          'weight' => '2',
+          'weight' => '3',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -1934,6 +2082,7 @@ function mods_basic_image_field_default_fields() {
   t('Genre');
   t('Geographic');
   t('Identifier (local)');
+  t('Image');
   t('Includes first order political divisions called provinces within a country, e.g. in Canada.');
   t('Includes regions that have status as a jurisdiction, usually incorporating more than one first level jurisdiction.');
   t('Language');
@@ -1944,6 +2093,7 @@ function mods_basic_image_field_default_fields() {
   t('Name of the largest local administrative unit in various countries, e.g. England.');
   t('Names');
   t('Note');
+  t('Part Of');
   t('Place');
   t('Province');
   t('Publisher');
