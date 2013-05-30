@@ -1201,7 +1201,6 @@ function mods_basic_image_field_default_fields() {
           'module' => 'image',
           'settings' => array(
             'image_link' => '',
-            'image_style' => 'basic_image_resize',
           ),
           'type' => 'image',
           'weight' => '0',
