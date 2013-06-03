@@ -198,7 +198,7 @@ $islandora_sync_field_datastreams = array();
   'create_type' => 'element',
   'create_value' => 'country',
   'read_context' => 'parent',
-  'read_path' => 'mods:country',
+  'read_path' => 'mods:county',
   'predicate' => '',
   'predicate_uri' => '',
 );
